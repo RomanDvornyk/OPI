@@ -1,0 +1,10 @@
+^C:\USERS\USER\ONEDRIVE\DESKTOP\OPAM\BUILD\CMAKEFILES\B9DCDC21F7FB36114A7575FDEF2924CC\GENERATE.STAMP.RULE
+setlocal
+E:\Cmake\bin\cmake.exe -SC:/Users/User/OneDrive/Desktop/OPAM/опам -BC:/Users/User/OneDrive/Desktop/OPAM/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/User/OneDrive/Desktop/OPAM/build/ListProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
